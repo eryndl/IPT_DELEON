@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #f8f3f2;
+    scroll-behavior: smooth;
+}
+
+.top-nav {
+    background-color: #8e8e8e;
+    border: 1px solid #240046;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-nav ul li, a {
+    display: inline;
+    color: #240046;
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.top-nav ul li:hover {
+    color: #ffc8fb;
+}
+
+.header {
+    position: fixed;
+    top: 37px; 
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: #ffdeeb;
+    border: 1px solid #240046;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.header img {
+    height: 50px;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar a {
+    font-size: 17px;
+    color: #240046;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.navbar a:hover {
+    color: #8e8e8e;
+}
+
+main {
+    padding: 160px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.commission img {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover; 
+    margin-bottom: 20px;
+}
+
+.commission h1, .commission h2 {
+    color: #240046;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.commission p {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #240046;
+    line-height: 1.8;
+}
+
+.materials-pricing {
+    margin-top: 50px;
+}
+
+.materials-pricing h2 {
+    font-size: 22px;
+    color: #240046;
+    margin-bottom: 10px;
+}
+
+.materials-pricing p {
+    margin-bottom: 40px;
+    color: #240046;
+    line-height: 1.8;
+}
+
+.materials-pricing h3 {
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+.materials-pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.materials-pricing table th, .materials-pricing table td {
+    border: 1px solid #240046;
+    padding: 8px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.materials-pricing table th {
+    background-color: #ffc8fb;
+    color: #240046;
+}
+
+.materials-pricing table td {
+    background-color: #fff;
+}
+
+.commission-process {
+    margin-top: 50px;
+}
+
+.commission-process h2 {
+    font-size: 22px;
+    color: #240046;
+    margin-bottom: 20px;
+}
+
+.commission-process p {
+    margin-bottom: 40px;
+    color: #240046;
+    line-height: 1.8;
+}
+
+.commission-process h3 {
+    margin-bottom: 10Px;
+    color: #240046;
+    line-height: 1.8;
+}
+
+.form-section {
+    background-color: transparent; 
+    border: none; 
+}
+
+.form-section h2 {
+    font-size: 22px;
+    color: #240046;
+    margin-bottom: 20px;
+}
+
+form label {
+    color: #240046;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #240046;
+    border-radius: 3px;
+}
+
+form button  {
+    padding: 10px 20px;
+    background-color: #ffdeeb;
+    color: #240046;
+    border: 1px solid #240046;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    transition: color ease 0.3s;
+    float: right;
+}
+
+
+form button:hover {
+    background-color: #8e8e8e; 
+    color: #ffc8fb; 
+}
+
+.footer {
+    background-color: #ffdeeb;
+    color: #240046;
+    border: 1px solid #240046;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer p {
+    font-size: 12px;
+}
