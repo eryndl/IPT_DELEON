@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Data Activity</title>
+<style>
+     .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    font-size: 50px;
+    margin-left: 400px;
+    font-weight: bold;
+}
+
+.image-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+h2 {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+td {
+    padding: 5px;
+    background: transparent; 
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 5px;
+    margin: 2px 0;
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid #ddd;
+}
+
+section {
+    padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>BIODATA</h1>
+        <div class="image-box"></div>
+        <img src="">
+    </div>
+
+    <section class="personal-data">
+        <h2>Personal Data</h2>
+        <table>
+            <tr>
+                <td>Position Desired</td>
+                <td>:</td>
+                <td><input type="text" name="position"></td>
+                <td>Date</td>
+                <td>:</td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td><input type="text" name="name"></td>
+                <td>Gender</td>
+                <td>:</td>
+                <td><input type="text" name="gender"></td>
+            </tr>
+            <tr>
+                <td>City Address</td>
+                <td>:</td>
+                <td><input type="text" name="city_address"></td>
+            </tr>
+            <tr>
+                <td>Provincial Address</td>
+                <td>:</td>
+                <td><input type="text" name="provincial_address"></td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td>:</td>
+                <td><input type="text" name="telephone"></td>
+                <td>Cellphone</td>
+                <td>: <br> : </td>
+                <td><input type="text" name="cellphone"></td>
+            </tr>
+            <tr>
+                <td>Email Adress</td>
+                <td>:</td>
+                <td><input type="text" name="email_address"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>:</td>
+                <td><input type="text" name="date_birth"></td>
+                <td>Birth of Place</td>
+                <td>:</td>
+                <td><input type="text" name="birth_place"></td>
+            </tr>
+            <tr>
+                <td>Civil Status</td>
+                <td>:</td>
+                <td><input type="text" name="civil_status"></td>
+                <td>Citizenship</td>
+                <td>:</td>
+                <td><input type="text" name="citizenship"></td>
+            </tr>
+            <tr>
+                <td>Heighy</td>
+                <td>:</td>
+                <td><input type="text" name="height"></td>
+                <td>Weight</td>
+                <td>:</td>
+                <td><input type="text" name="weight"></td>
+            </tr>
+            <tr>
+                <td>Religion</td>
+                <td>:</td>
+                <td><input type="text" name="religion"></td>
+            </tr>
+            <tr>
+                <td>Spouse</td>
+                <td>:</td>
+                <td><input type="text" name="spouse"></td>
+               <td>Occupation</td>
+                <td>:</td>
+                <td><input type="text" name="occupation"></td>
+            </tr>
+
+        <tr>
+            <td>Name of Children</td>
+             <td>:</td>
+            <td colspan="4"><input type="text" name="children"></td>
+        </tr>
+        <tr>
+            <td>Father's Name</td>
+            <td>:</td>
+            <td><input type="text" name="father-name"></td>
+            <td>Occupation</td>
+            <td>:</td>
+            
+            <td colspan="2"><input type="text" name="father-occupation"></td>
+        </tr>
+        <tr>
+            <td>Mother's Name</td>
+            <td>:</td>
+            <td><input type="text" name="mother-name"></td>
+            <td>Occupation</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" name="mother-occupation"></td>
+        </tr>
+        <tr>
+            <td>Language/Dialect Spoken:</td>
+            <td colspan="4"><input type="text" name="language"></td>
+        </tr>
+        <tr>
+            <td>Person to contact in case of emergence</td>
+            <td>:</td>
+            <td colspan="2"><input type="text" name="emergency-contact-name"></td>
+            <td>Contact No</td>
+            <td>:</td>
+            <td><input type="tel" name="emergency-contact-phone"></td>
+        </tr>
+    </table>
+
+    <h3>Educational Background</h3>
+    <table>
+        <tr>
+            <td>Elementary</td>
+            <td>:</td>
+            <td><input type="text" name="elementary"></td>
+            <td>Year Graduated</td>
+            <td>:</td>
+            <td><input type="number" name="elementary-year"></td>
+        </tr>
+        <tr>
+            <td>High School</td>
+            <td>:</td>
+            <td><input type="text" name="highschool"></td>
+            <td>Year Graduated</td>
+            <td>:</td>
+            <td><input type="number" name="highschool-year"></td>
+        </tr>
+        <tr>
+            <td>College</td>
+            <td>:</td>
+            <td><input type="text" name="college"></td>
+            <td>Year Graduated</td>
+            <td>:</td>
+            <td><input type="number" name="college-year"></td>
+        </tr>
+        <tr>
+            <td>Degree Received</td>
+            <td>:</td>
+            <td colspan="3"><input type="text" name="degree"></td>
+        </tr>
+        <tr>
+            <td>Special Skills</td>
+            <td>:</td>
+            <td colspan="3"><input type="text" name="skills"></td>
+        </tr>
+    </table>
+
+    <h3>Employment Record</h3>
+    <table>
+        <tr>
+            <td>Company Name</td>
+            <td>:</td>
+            <td colspan="3"><input type="text" name="company-name-1"></td>
+        </tr>
+        <tr>
+            <td>Position</td>
+            <td>:</td>
+            <td><input type="text" name="position-1"></td>
+            <td>From</td>
+            <td>:</td>
+            <td><input type="date" name="from-1"></td>
+        </tr>
+        <tr>
+            <td>To</td>
+            <td>:</td>
+            <td colspan="3"><input type="date" name="to-1"></td>
+        </tr>
+    </table>
+
+    <h3>Character Reference</h3>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="reference-name-1"></td>
+            <td>Company:</td>
+            <td><input type="text" name="reference-company-1"></td>
+        </tr>
+        <tr>
+            <td>Position:</td>
+            <td><input type="text" name="reference-position-1"></td>
+            <td>Contact No.:</td>
+            <td><input type="tel" name="reference-contact-1"></td>
+        </tr>
+    </table>
+
+    <h3>Documents</h3>
+    <table>
+        <tr>
+            <td>Res. Cert. No.:</td>
+            <td><input type="text" name="res-cert"></td>
+            <td>Issued at:</td>
+            <td><input type="text" name="issued-at"></td>
+            <td>Issued on:</td>
+            <td><input type="date" name="issued-on"></td>
+        </tr>
+        <tr>
+            <td>SSS:</td>
+            <td><input type="text" name="sss"></td>
+            <td>TIN:</td>
+            <td><input type="text" name="tin"></td>
+            <td>NBI No.:</td>
+            <td><input type="text" name="nbi"></td>
+        </tr>
+        <tr>
+            <td>Passport No.:</td>
+            <td colspan="5"><input type="text" name="passport"></td>
+        </tr>
+        <td>
+          
+        </td>
+    </table>
+
+    <p>I hereby certify that the above information is true and correct to the best of my knowledge and belief.</p>
+
+    <p>__________________________<br>
+    Applicant's Signature</p>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
